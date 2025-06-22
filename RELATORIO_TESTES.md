@@ -9,15 +9,23 @@
 | Renomear documento     | Alterar o nome de um arquivo existente   | Funcionando        | ✅       |
 | Remover documento      | Deletar um arquivo da lista              | Funcionando        | ✅       |
 
-## Feedback Simulado do Bibliotecário
+---
 
-> "Seria útil mostrar o ano de publicação ao lado de cada documento."
+## Feedback Recebido (Simulado)
 
-## Ações Tomadas
+> “Seria útil mostrar o ano de publicação ao lado de cada documento, para facilitar a localização e o contexto do conteúdo.”
 
-- A estrutura do nome do arquivo será adaptada para conter o ano (ex: `nome_2023.pdf`).
-- O sistema poderá extrair o ano automaticamente do nome futuramente.
+---
+
+## Como o Feedback foi Incorporado
+
+- Foi decidido que o ano de publicação será incluído no **nome do arquivo** no momento do upload.
+- A lógica do sistema será adaptada para **extrair o ano do nome do arquivo** (ex: `artigo_2022.pdf`) e exibir essa informação ao lado do título.
+- Atualizações futuras incluirão parsing automático de metadados do PDF, quando disponíveis, para capturar o ano com maior precisão.
+- A interface foi ajustada para exibir o tipo de arquivo e status "Desconhecido" até que a lógica de ano seja implementada dinamicamente.
+
+---
 
 ## Considerações Finais
 
-O sistema está funcionando de acordo com os requisitos da atividade. O repositório está documentado e permite contribuições externas via Pull Requests.
+O sistema atendeu aos requisitos principais de manipulação de arquivos e interface amigável. A estrutura do projeto e repositório estão prontos para melhorias contínuas com base no uso real e feedback dos usuários.
